@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Sidebar (hidden by default) -->
+  <nav id="sidebar">
+    <a onclick="closeSidebar()" class="sidebar-item" href="#topbar">Close Menu</a>
+    <a onclick="closeSidebar()" class="sidebar-item" href="#foods">Food</a>
+    <a onclick="closeSidebar()" class="sidebar-item" href="#about">About</a>
+  </nav>
+  <!-- Top menu -->
+  <div id="topbar" class="fixed-top">
+    <div class="container-fluid">
+      <button onclick="openSidebar()" class="toggle-button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="email">
+        <a href="#">Mail</a>
+      </div>
+      <div class="brand">
+        <span>My Food</span>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <main>
+    <div id="content">
+      <!-- Photo section -->
+      <div id="foods" class="row text-center">
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/sandwich.jpg" alt="Sandwich">
+          <h5>The Perfect Sandwich, A Real NYC Classic</h5>
+          <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/steak.jpg" alt="Steak">
+          <h5>Let Me Tell You About This Steak</h5>
+          <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/cherries.jpg" alt="Cherries">
+          <h5>Cherries, interrupted</h5>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          <br>
+          <p>What else?</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/wine.jpg" alt="Wine">
+          <h5>Once Again, Robust Wine and Vegetable Pasta</h5>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/popsicle.jpg" alt="Ice Cream">
+          <h5>All I Need Is a Popsicle</h5>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/salmon.jpg" alt="Salmon">
+          <h5>Salmon For Your Skin</h5>
+          <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/sandwich.jpg" alt="Sandwich">
+          <h5>The Perfect Sandwich, A Real Classic</h5>
+          <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="./assets/css/image/croissant.jpg" alt="Bread">
+          <h5>Le French</h5>
+          <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="text-center">
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+      <hr>
+      <!-- About section -->
+      <div id="about" class="padding-32 text-center">
+        <h3>About Me, The Food Man</h3>
+        <br>
+        <img class="img-fluid" src="./assets/css/image/chef.jpg" alt="Master Chef">
+      </div>
+      <div class="padding-32 text-center">
+        <h4>I am Who I Am!</h4>
+        <h6>
+          <i>With Passion For Real, Good Food</i>
+        </h6>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+          ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+          Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent
+          tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+          non fringilla.</p>
+      </div>
+      <hr>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="row padding-32">
+      <div class="col-md-4">
+        <h3>FOOTER</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Powered by <a href="#">w3.css</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3>BLOG POSTS</h3>
+        <ul>
+          <li class="padding-16">
+            <img src="./assets/css/image/workshop.jpg" alt="Work shop">
+            <span>Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="padding-16">
+            <img src="./assets/css/image/gondol.jpg" alt="Something">
+            <span>Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="black-tag">Travel</span>
+          <span class="tag">New York</span>
+          <span class="tag">Dinner</span>
+          <span class="tag">Salmon</span>
+          <span class="tag">France</span>
+          <span class="tag">Drinks</span>
+          <span class="tag">Ideas</span>
+          <span class="tag">Flavors</span>
+          <span class="tag">Cuisine</span>
+          <span class="tag">Chicken</span>
+          <span class="tag">Dressing</span>
+          <span class="tag">Fried</span>
+          <span class="tag">Fish</span>
+          <span class="tag">Duck</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
